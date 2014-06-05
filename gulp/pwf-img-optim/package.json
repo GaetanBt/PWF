@@ -1,0 +1,16 @@
+{
+  "name": "pwf-img-optim",
+  "version": "1.0.0",
+  "description": "A little gulp-based system built to optimize images",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Gaëtan Bonnot",
+  "license": "MIT",
+  "devDependencies": {
+    "gulp": "^3.6.2",
+    "gulp-clean": "^0.2.4",
+    "gulp-imagemin": "^0.5.0"
+  }
+}
