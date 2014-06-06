@@ -1,0 +1,54 @@
+/* ================ Debug CSS ================ */
+/* == Erreurs ==================== */
+
+/* Renseigner un attribut title pertinent ou laissez le vide mais il doit apparaitre ! */
+a:not([title]) {
+	color: tomato;
+	outline: 4px dotted tomato;
+}
+
+/* -- Liens erronés ou vides -------------------- */
+a[href=""], 
+a[href="#"],  
+a[href*="dcve"], 
+a[href*="?link"],
+a[href*="Géoloc"],
+a[href*="GEOLOC"] {color: tomato; outline: 2px solid tomato;} 	  
+
+/* -- Styles en ligne - Éléments ciblés pour ne pas bloquer les contraintes du CMS -------------------- */
+/* Éléments de base */
+a[style],
+p[style], 
+ul[style],
+li[style],
+img[style], 
+span[style],
+
+/* Tableaux de mise en page */
+tr[style], 
+th[style], 
+td[style],
+table[style] {
+	background: tomato;
+	outline: 2px solid tomato;
+}
+
+/* -- Balises vides -------------------- */
+p:empty {
+	background: tomato;
+	height: 25px;
+}
+
+/* -- Prévoir un champs ALT sur les images, même s'il est vide ! -------------------- */
+img:not([alt]) {outline: 5px dashed tomato;}
+
+/* == Avertissements ==================== */
+
+/* -- Balises particulières --------------------*/
+/* Vérifier la valeur sémantique de ces balises */
+u, i, em {background: orange;}
+
+/* -- Images -------------------- */
+/* Renseigner les dimensions des images par soucis de performance */
+img:not([width]), 
+img:not([height]) {outline: 5px dashed orange;}
