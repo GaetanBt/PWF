@@ -13,7 +13,11 @@ a[href="#"],
 a[href*="dcve"], 
 a[href*="?link"],
 a[href*="Géoloc"],
-a[href*="GEOLOC"] {color: tomato; outline: 2px solid tomato;} 	  
+a[href*="GEOLOC"] {color: tomato; outline: 2px solid tomato;}
+
+/* Lorsque l'on force l'ouverture d'un lien dans un nouvel onglet, il est bienvenu de le signaler */
+a[target="_blank"][title=""],
+a[target="_blank"]:not([title]) {background: orange; color: red;}	
 
 /* -- Styles en ligne - Éléments ciblés pour ne pas bloquer les contraintes du CMS -------------------- */
 /* Éléments de base */
