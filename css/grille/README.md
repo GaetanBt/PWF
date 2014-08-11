@@ -7,18 +7,18 @@ Just a basic template for a simple grid system. You can use it wherever you want
 This is an exemple of the structure you need to use :
 
 ```
-<div class="grid grid2">
+<div class="grille grille2">
 	<div>Your content</div>
 	<div>Your content</div>
 </div>
 ```
 
-Your columns will be generated with the first children of the element that has the ```.grid``` class.
+Your columns will be generated with the first children of the element that has the ```.grille``` class.
 
 You can configurate the grid using an other class.
 
 For example : 
-* ```.grid2``` 
-* ```.grid3```
-* ```.grid1-2```
-* ```.grid2-1```
+* ```.grille2``` 
+* ```.grille3```
+* ```.grille1-2```
+* ```.grille2-1```
