@@ -1,0 +1,43 @@
+// Nom de la classe voulu
+@grid-name: .grid;
+
+
+/* -- Général -------------------- */
+/* Structure en tableau */
+@{grid-name} {
+	display: table;
+	margin-top: 20px;
+	width: 100%;
+}
+
+/* Cellules */
+@{grid-name} > * {
+	display: table-cell; 
+	padding: 0 20px;
+	vertical-align: top; /* Fixes issues w/ images */
+}
+
+/* Harmonie générale */
+@{grid-name} > *:first-child {padding-left:0;}
+@{grid-name} > *:last-child, @{grid-name}__last_item {padding-right:0;} /* Dépend du niveau de compatibilité demandé */
+
+
+/* -- Dimensions ---------- */
+/* Grilles égales */
+@{grid-name}2 > * {width: 50%;}
+@{grid-name}3 > * {width: 33.333%;}
+@{grid-name}4 > * {width: 25%;}
+@{grid-name}5 > * {width: 20%;}
+
+/* Grilles inégales */
+@{grid-name}1-2 > *:first-child {width: 33.333%;}
+@{grid-name}1-2 > * {width: 66.666%;}
+
+@{grid-name}2-1 > *:first-child {width: 66.666%;}
+@{grid-name}2-1 > * {width: 33.333%;}
+
+@{grid-name}3-1 > *:first-child {width: 75%;}
+@{grid-name}3-1 > * {width: 25%;}
+
+@{grid-name}1-3 > *:first-child {width: 25%;}
+@{grid-name}1-3 > * {width: 75%;}
