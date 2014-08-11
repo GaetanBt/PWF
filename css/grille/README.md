@@ -24,3 +24,5 @@ For example :
 * ```.grille2-1```
 
 With the scss version, you can set the class name that you want in the ```$grid-name``` variable. It can be ```.grille ``` like the examples, ```.grid``` for english projects or anything you would like. :)
+
+You can do the same thing with the Less version. You just have to change the ```@grid-name``` variable. Don't forget to put the dot for the class in the variable !
